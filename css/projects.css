@@ -1,0 +1,109 @@
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.project-header {
+  margin-top: 17%;
+  text-align: center;
+}
+.into-title {
+  font-size: 150px;
+}
+.into-title .text-wrapper {
+  display: inline-block;
+  overflow: hidden;
+}
+.into-title .letter {
+  -webkit-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  display: inline-block;
+}
+/*================Gallerie d'images================*/
+.project-container-gallerie {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 100px;
+  padding-bottom: 100px;
+}
+.project-wrapper {
+  opacity: 0;
+  height: 70vh;
+  width: 60vh;
+  -webkit-transform: translateX(-200px);
+  -ms-transform: translateX(-200px);
+  transform: translateX(-200px);
+}
+.project-wrapper img {
+  height: 100%;
+  width: 100%;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.enter-screen {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition: all 2.5s;
+  -o-transition: all 2.5s;
+  transition: all 2.5s;
+}
+.enter-screen img {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 2.5s;
+  -o-transition: all 2.5s;
+  transition: all 2.5s;
+}
+.project-wrapper p {
+  white-space: nowrap;
+  opacity: 0;
+  overflow: hidden;
+  background-color: white;
+  position: absolute;
+  bottom: 20px;
+  right: -200px;
+  max-width: 0px;
+  padding: 20px;
+}
+
+.enter-screen p {
+  opacity: 1;
+  max-width: 300px;
+  -webkit-transition: all 2.5s;
+  -o-transition: all 2.5s;
+  transition: all 2.5s;
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+@media (max-width: 1000px) {
+  .into-title {
+    font-size: 100px;
+  }
+}
+@media (max-width: 800px) {
+  .into-title {
+    font-size: 70px;
+  }
+}

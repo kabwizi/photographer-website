@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Creative front end photographer website exemple"
+    />
+    <meta name="author" content="Kabwizi Serge" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <script src="https://unpkg.co/gsap/dist/gsap.min.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"
+      defer
+    ></script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="/js/index.js" defer></script>
+    <script src="/js/menu.js" defer></script>
+    <script src="/js/mouse.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body id="index-wrapper">
+    <div class="wrapper">
+      <!--Souris customisé-->
+      <div id="mouse-follower"></div>
+      <div id="mouse-follower-description"></div>
+      <!--Navigation-->
+      <nav>
+        <a class="site-logo">photo / film</a>
+        <div class="site-menu">
+          <a href="#" class="menu-item">Facebook</a>
+          <a href="#" class="menu-item">Instagram</a>
+          <a href="#" class="menu-item">Contact</a>
+        </div>
+        <div class="humbergur-menu">
+          <div class="humbergur-menu-item humbergur-menu-1"></div>
+          <div class="humbergur-menu-item humbergur-menu-2"></div>
+          <div class="humbergur-menu-item humbergur-menu-3"></div>
+        </div>
+        <div class="humbergur-menu-container">
+          <a href="#" class="menu-item">Facebook</a>
+          <a href="#" class="menu-item">Instagram</a>
+          <a href="#" class="menu-item">Contact</a>
+        </div>
+      </nav>
+      <!--User information-->
+      <section class="middle-section">
+        <div class="middle-section-left">
+          <div class="user-info">
+            <h2>Antoine Lavoix</h2>
+            <p>PHOTOGRAPHE</p>
+            <p>CAMERAMAN</p>
+          </div>
+          <img id="user-img" src="/img/user.jpg" alt="Antoine Lavoix photo" />
+        </div>
+        <a href="/projects.html" class="middle-section-right"
+          >/ Voir tous mes projets<br />/ Gallery</a
+        >
+      </section>
+      <!--Image par date (en bas)-->
+      <section class="container">
+        <div class="container-items">
+          <div id="container-img-wrapper">
+            <div id="container-img"></div>
+          </div>
+          <div class="item item-1">
+            <a
+              href="/projects.html"
+              class="container-item"
+              data-img="img-1.jpg"
+            >
+              <h3>
+                Jun<br />
+                2019
+              </h3>
+            </a>
+          </div>
+          <div class="item item-2">
+            <a
+              href="/projects.html"
+              class="container-item"
+              data-img="img-2.jpg"
+            >
+              <h3>
+                Oct<br />
+                2019
+              </h3>
+            </a>
+          </div>
+          <div class="item item-3">
+            <a
+              href="/projects.html"
+              class="container-item"
+              data-img="img-3.jpg"
+            >
+              <h3>
+                Dec<br />
+                2019
+              </h3>
+            </a>
+          </div>
+          <div class="item item-4">
+            <a
+              href="/projects.html"
+              class="container-item"
+              data-img="img-4.jpg"
+            >
+              <h3>
+                Fev<br />
+                2020
+              </h3>
+            </a>
+          </div>
+          <div class="item item-5">
+            <a
+              href="/projects.html"
+              class="container-item"
+              data-img="img-5.jpg"
+            >
+              <h3>
+                Apr<br />
+                2020
+              </h3>
+            </a>
+          </div>
+          <div class="item item-6">
+            <a
+              href="/projects.html"
+              class="container-item"
+              data-img="img-6.jpg"
+            >
+              <h3>
+                Sep<br />
+                2020
+              </h3>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Creative front end photographer website exemple"
+    />
+    <meta name="author" content="Kabwizi Serge" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/projects.css" />
+    <script src="https://unpkg.co/gsap/dist/gsap.min.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      defer
+    ></script>
+    <script src="/js/projects.js" defer></script>
+    <script src="/js/mouse.js" defer></script>
+    <script src="/js/menu.js" defer></script>
+
+    <title>Document</title>
+  </head>
+  <body id="scroll-container">
+    <!--Souris customisé-->
+    <div class="wrapper">
+      <div id="mouse-follower"></div>
+      <div id="mouse-follower-description"></div>
+      <!--Navigation-->
+      <nav>
+        <a href="/index.html" class="site-logo">photo / film</a>
+        <div class="site-menu">
+          <a href="#" class="menu-item">Facebook</a>
+          <a href="#" class="menu-item">Instagram</a>
+          <a href="#" class="menu-item">Contact</a>
+        </div>
+        <div class="humbergur-menu">
+          <div class="humbergur-menu-item humbergur-menu-1"></div>
+          <div class="humbergur-menu-item humbergur-menu-2"></div>
+          <div class="humbergur-menu-item humbergur-menu-3"></div>
+        </div>
+        <div class="humbergur-menu-container">
+          <a href="#" class="menu-item">Facebook</a>
+          <a href="#" class="menu-item">Instagram</a>
+          <a href="#" class="menu-item">Contact</a>
+        </div>
+      </nav>
+      <!--titre d'introduction de la page-->
+      <header class="project-header">
+        <h1 class="into-title">
+          <span class="text-wrapper">
+            <span class="letters">Projets recents</span>
+          </span>
+        </h1>
+        <p id="intro-little-description">Photographe / 2019 - 2021</p>
+      </header>
+      <!--list de project en images-->
+      <section class="project-container-gallerie">
+        <div class="project-wrapper">
+          <img
+            id="img-13"
+            data-img-description="<p>Jan 2021<br />Montréal</p>"
+            src="/img/img-13.jpg"
+            alt="image 1"
+          />
+          <p>
+            Le lorem ipsum est, en imprimerie, <br />une suite de mots sans
+            signification<br />utilisée à titre provisoire pour.
+          </p>
+        </div>
+        <div class="project-wrapper">
+          <img
+            src="/img/img-12.jpg"
+            data-img-description="<p>Déc 2020<br />Gatineau</p>"
+            alt="image 2"
+          />
+          <p>
+            Le lorem ipsum est, en imprimerie, <br />une suite de mots sans
+            signification<br />utilisée à titre provisoire pour.
+          </p>
+        </div>
+        <div class="project-wrapper">
+          <img
+            src="/img/img-11.jpg"
+            data-img-description="<p>Oct 2020<br />Gatineau</p>"
+            alt="image 2"
+          />
+          <p>
+            Le lorem ipsum est, en imprimerie, <br />une suite de mots sans
+            signification<br />utilisée à titre provisoire pour.
+          </p>
+        </div>
+        <div class="project-wrapper">
+          <img
+            src="/img/img-10.jpg"
+            data-img-description="<p>Sep 2021<br />Montréal</p>"
+            alt="image 1"
+          />
+          <p>
+            Le lorem ipsum est, en imprimerie, <br />une suite de mots sans
+            signification<br />utilisée à titre provisoire pour.
+          </p>
+        </div>
+        <div class="project-wrapper">
+          <img
+            src="/img/img-9.jpg"
+            data-img-description="<p>Jul 2020<br />Ottawa</p>"
+            alt="image 2"
+          />
+          <p>
+            Le lorem ipsum est, en imprimerie, <br />une suite de mots sans
+            signification<br />utilisée à titre provisoire pour.
+          </p>
+        </div>
+        <div class="project-wrapper">
+          <img
+            src="/img/img-8.jpg"
+            data-img-description="<p>Mai 2020<br />Ottawa</p>"
+            alt="image 1"
+          />
+          <p>
+            Le lorem ipsum est, en imprimerie, <br />une suite de mots sans
+            signification<br />utilisée à titre provisoire pour.
+          </p>
+        </div>
+        <div class="project-wrapper">
+          <img
+            src="/img/img-7.jpg"
+            data-img-description="<p>Mar 2020<br />Torronto</p>"
+            alt="image 2"
+          />
+          <p>
+            Le lorem ipsum est, en imprimerie, <br />une suite de mots sans
+            signification<br />utilisée à titre provisoire pour.
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
