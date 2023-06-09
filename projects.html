@@ -35,12 +35,23 @@
     <script src="/js/projects.js" defer></script>
     <script src="/js/mouse.js" defer></script>
     <script src="/js/menu.js" defer></script>
-
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <link
+      href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    "
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body id="scroll-container">
     <!--Souris customisé-->
-    <div class="wrapper">
+    <div
+      class="wrapper"
+      onclick="closeStyleSheet(event, '#image-list-wrapper')"
+    >
       <div id="mouse-follower"></div>
       <div id="mouse-follower-description"></div>
       <!--Navigation-->
@@ -49,7 +60,12 @@
         <div class="site-menu">
           <a href="#" class="menu-item">Facebook</a>
           <a href="#" class="menu-item">Instagram</a>
-          <a href="#" class="menu-item">Contact</a>
+          <div
+            onclick="toggleStyleSheet('#contact-container')"
+            class="menu-item active-mouse"
+          >
+            Contact
+          </div>
         </div>
         <div class="humbergur-menu">
           <div class="humbergur-menu-item humbergur-menu-1"></div>
@@ -59,99 +75,167 @@
         <div class="humbergur-menu-container">
           <a href="#" class="menu-item">Facebook</a>
           <a href="#" class="menu-item">Instagram</a>
-          <a href="#" class="menu-item">Contact</a>
+          <div class="menu-item">Contact</div>
         </div>
       </nav>
       <!--titre d'introduction de la page-->
       <header class="project-header">
         <h1 class="into-title">
           <span class="text-wrapper">
-            <span class="letters">Projets recents</span>
+            <span class="letters">Recent projects</span>
           </span>
         </h1>
-        <p id="intro-little-description">Photographe / 2019 - 2021</p>
+        <p id="intro-little-description">Photos / 2019 - 2021</p>
       </header>
       <!--list de project en images-->
       <section class="project-container-gallerie">
-        <div class="project-wrapper">
+        <div
+          class="project-wrapper"
+          onclick="toggleStyleSheet('#image-list-wrapper','1,2,3,4,5,6,7,8,9,10')"
+        >
           <img
             id="img-13"
-            data-img-description="<p>Jan 2021<br />Montréal</p>"
+            data-img-description="<div><p>Jan 2021</p><p>Montréal</p></div>"
             src="/img/img-13.jpg"
             alt="image 1"
           />
           <p>
-            Le lorem ipsum est, en imprimerie, <br />une suite de mots sans
-            signification<br />utilisée à titre provisoire pour.
+            Captured the vibrant streets of Tokyo, highlighting the
+            juxtaposition of traditional and modern elements in a single frame.
           </p>
         </div>
-        <div class="project-wrapper">
+        <div
+          class="project-wrapper"
+          onclick="toggleStyleSheet('#image-list-wrapper','1,7,8,9,10')"
+        >
           <img
-            src="/img/img-12.jpg"
-            data-img-description="<p>Déc 2020<br />Gatineau</p>"
+            src="/img/img-22.jpg"
+            data-img-description="<div><p>Dec 2020</p><p>Gatineau</p></div>"
             alt="image 2"
           />
           <p>
-            Le lorem ipsum est, en imprimerie, <br />une suite de mots sans
-            signification<br />utilisée à titre provisoire pour.
+            Immersed in the natural beauty of Iceland, the photo shoot showcased
+            the breathtaking landscapes, including glaciers, waterfalls, and
+            volcanic formations.
           </p>
         </div>
-        <div class="project-wrapper">
+        <div
+          class="project-wrapper"
+          onclick="toggleStyleSheet('#image-list-wrapper','41,40,42,43,44,45,46,47,48,49')"
+        >
           <img
-            src="/img/img-11.jpg"
-            data-img-description="<p>Oct 2020<br />Gatineau</p>"
+            src="/img/img-40.jpg"
+            data-img-description="<div><p>Oct 2020</p><p>Torronto</p></div>"
             alt="image 2"
           />
           <p>
-            Le lorem ipsum est, en imprimerie, <br />une suite de mots sans
-            signification<br />utilisée à titre provisoire pour.
+            A jewelry photo shoot captures the beauty and details of jewelry
+            pieces through carefully arranged compositions and lighting
+            techniques, resulting in captivating images that highlight their
+            allure.
           </p>
         </div>
-        <div class="project-wrapper">
+        <div
+          class="project-wrapper"
+          onclick="toggleStyleSheet('#image-list-wrapper','51,50,52,53,54,55,56,57,58')"
+        >
           <img
-            src="/img/img-10.jpg"
-            data-img-description="<p>Sep 2021<br />Montréal</p>"
+            src="/img/img-55.jpg"
+            data-img-description="<div><p>Nov 2020</p><p>Montréal</p></div>"
             alt="image 1"
           />
           <p>
-            Le lorem ipsum est, en imprimerie, <br />une suite de mots sans
-            signification<br />utilisée à titre provisoire pour.
+            Embarked on a safari adventure in the Serengeti, photographing the
+            majestic wildlife in their natural habitat, from lions and elephants
+            to zebras and giraffes.
           </p>
         </div>
-        <div class="project-wrapper">
+        <div
+          class="project-wrapper"
+          onclick="toggleStyleSheet('#image-list-wrapper','31,39,32,33,34,35,36,38,30')"
+        >
           <img
-            src="/img/img-9.jpg"
-            data-img-description="<p>Jul 2020<br />Ottawa</p>"
+            src="/img/img-39.jpg"
+            data-img-description="<div><p>Jul 2020</p><p>Montréal</p></div>"
             alt="image 2"
           />
           <p>
-            Le lorem ipsum est, en imprimerie, <br />une suite de mots sans
-            signification<br />utilisée à titre provisoire pour.
+            Ventured into the ancient ruins of Machu Picchu, preserving the
+            mystical aura of this UNESCO World Heritage site, nestled amidst the
+            Andes Mountains."
           </p>
         </div>
-        <div class="project-wrapper">
+        <div
+          class="project-wrapper"
+          onclick="toggleStyleSheet('#image-list-wrapper', '1,2,3,4,5,6,7,8,9,10')"
+        >
           <img
             src="/img/img-8.jpg"
-            data-img-description="<p>Mai 2020<br />Ottawa</p>"
+            data-img-description="<div><p>May 2020</p><p>Ottawa</p></div>"
             alt="image 1"
           />
           <p>
-            Le lorem ipsum est, en imprimerie, <br />une suite de mots sans
-            signification<br />utilisée à titre provisoire pour.
+            Explored the ethereal beauty of the Northern Lights in Norway,
+            capturing the dancing ribbons of colorful lights against a backdrop
+            of snow-covered landscapes.
           </p>
         </div>
-        <div class="project-wrapper">
+        <div
+          class="project-wrapper"
+          onclick="toggleStyleSheet('#image-list-wrapper','1,2,3,4,5,6,7,8,9,10')"
+        >
           <img
             src="/img/img-7.jpg"
-            data-img-description="<p>Mar 2020<br />Torronto</p>"
+            data-img-description="<div><p>Mar 2020</p><p>Torronto</p></div>"
             alt="image 2"
           />
           <p>
-            Le lorem ipsum est, en imprimerie, <br />une suite de mots sans
-            signification<br />utilisée à titre provisoire pour.
+            Delved into the historical charm of Rome, photographing iconic
+            landmarks such as the Colosseum, Vatican City, and the charming
+            cobblestone streets.
           </p>
         </div>
       </section>
     </div>
+    <!--list des photos des projects en images-->
+    <div id="image-list-wrapper">
+      <div id="image-list-wrapper-images">
+        <section class="splide" aria-label="Splide Basic HTML Example">
+          <div class="splide__track">
+            <ul class="splide__list" id="splide__list-parent"></ul>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!--contact-->
+    <div id="contact-container">
+      <div id="contact-wrapper">
+        <h3>Talk with me</h3>
+        <label>
+          <p>First Name</p>
+          <input type="text" placeholder="First Name" />
+        </label>
+        <label>
+          <p>Last Name</p>
+          <input type="text" placeholder="Last Name" />
+        </label>
+        <label>
+          <p>Email</p>
+          <input type="text" placeholder="Email" />
+        </label>
+        <label>
+          <p>Message</p>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+        </label>
+        <div class="button-black">Send Message</div>
+      </div>
+    </div>
+    <script></script>
   </body>
 </html>

@@ -1,3 +1,27 @@
+html {
+  scroll-snap-type: y mandatory;
+}
+
+.site-logo {
+  background-color: #fffa;
+}
+
+#mouse-follower-description div {
+  font-size: 1.7px;
+  text-align: center;
+  font-family: alegreya, serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
+  gap: 1px;
+}
+
+#mouse-follower-description div p {
+  height: 1.6px;
+  padding-top: 1px;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,6 +37,7 @@
 .project-header {
   margin-top: 17%;
   text-align: center;
+  scroll-snap-align: end;
 }
 .into-title {
   font-size: 150px;
@@ -42,14 +67,18 @@
   align-items: center;
   gap: 100px;
   padding-bottom: 100px;
+  scroll-snap-type: y mandatory;
 }
 .project-wrapper {
+  position: relative;
   opacity: 0;
-  height: 70vh;
+  height: 80vh;
   width: 60vh;
-  -webkit-transform: translateX(-200px);
+  /*  -webkit-transform: translateX(-200px);
   -ms-transform: translateX(-200px);
-  transform: translateX(-200px);
+  transform: translateX(-200px);*/
+  font-size: 15px;
+  scroll-snap-align: center;
 }
 .project-wrapper img {
   height: 100%;
@@ -60,9 +89,9 @@
 }
 .enter-screen {
   opacity: 1;
-  -webkit-transform: translateX(0px);
+  /*  -webkit-transform: translateX(0px);
   -ms-transform: translateX(0px);
-  transform: translateX(0px);
+  transform: translateX(0px);*/
   -webkit-transition: all 2.5s;
   -o-transition: all 2.5s;
   transition: all 2.5s;
@@ -76,20 +105,20 @@
   transition: all 2.5s;
 }
 .project-wrapper p {
-  white-space: nowrap;
   opacity: 0;
-  overflow: hidden;
   background-color: white;
   position: absolute;
   bottom: 20px;
   right: -200px;
-  max-width: 0px;
-  padding: 20px;
+  padding: 25px;
+  font-size: 20px;
+  white-space: normal;
+  font-family: alegreya, serif;
 }
 
 .enter-screen p {
   opacity: 1;
-  max-width: 300px;
+  max-width: 500px;
   -webkit-transition: all 2.5s;
   -o-transition: all 2.5s;
   transition: all 2.5s;
@@ -97,6 +126,127 @@
   -o-transition-delay: 0.5s;
   transition-delay: 0.5s;
 }
+/* image-list-wrapper*/
+#image-list-wrapper {
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(100%);
+  transition: all 0.2s;
+}
+
+.image-list-wrapper-img {
+  height: 65vh;
+  width: 100%;
+}
+
+.image-galery-wrapper {
+  padding: 40px 5px;
+  position: relative;
+}
+
+.image-galery-item-top-wrapper {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  top: 15px;
+}
+
+.image-galery-item-top-card {
+  width: 20px;
+  height: 25px;
+  background-color: white;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.image-galery-item-bottom-wrapper {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  bottom: 15px;
+}
+
+.image-galery-item-bottom-card {
+  width: 20px;
+  height: 25px;
+  background-color: white;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.splide__slide .image-galery-wrapper img {
+  transition: all 0.2s;
+  filter: grayscale(100%);
+}
+
+.splide__slide.is-active .image-galery-wrapper img {
+  filter: grayscale(0%);
+}
+
+/*contact*/
+#contact-container {
+  font-family: alegreya, serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(100%);
+  transition: all 0.2s;
+}
+
+#contact-wrapper {
+  background-color: rgb(245, 222, 179, 1);
+  padding: 30px 50px;
+  width: 500px;
+}
+
+.button-black {
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#contact-container h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  text-decoration: none;
+  color: rgb(46, 45, 43);
+}
+
+#contact-container p {
+  padding: 3px 0;
+}
+
+#contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+textarea {
+  padding: 10px 20px;
+  width: 100%;
+  border: 1px solid gray;
+}
+
 @media (max-width: 1000px) {
   .into-title {
     font-size: 100px;

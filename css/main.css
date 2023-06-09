@@ -1,4 +1,8 @@
-@import url('https://use.typekit.net/zhw3pwe.css');
+@import url("https://use.typekit.net/zhw3pwe.css");
+
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0;
@@ -208,9 +212,9 @@ nav {
 .user-info {
   position: absolute;
   left: 5px;
-  top: 60px;
+  top: 70px;
   font-size: 20px;
-  color: white;
+  color: rgb(88, 88, 88);
 }
 .user-info p {
   font-size: 15px;
@@ -268,6 +272,16 @@ nav {
   color: rgb(46, 45, 43);
   text-decoration: none;
 }
+
+.item h3 {
+  transform: translateY(0px);
+  transition: all 0.1s;
+}
+
+.item h3:hover {
+  transform: translateY(-40px);
+}
+
 .item:hover {
   -webkit-box-flex: 2;
   -ms-flex: 2;
@@ -284,18 +298,21 @@ img {
 }
 #container-img-wrapper {
   position: absolute;
-  top: -130vh;
+  top: -120vh;
   left: -80px;
-  width: 400px;
-  height: 500px;
-  overflow: hidden;
+  width: 300px;
+  height: 400px;
+  /*overflow: hidden;*/
   pointer-events: none;
   opacity: 0;
 }
-#container-img {
+#container-img-one,
+#container-img-two,
+#container-img-three {
   width: 100%;
   height: 100%;
   background-size: cover;
+  position: absolute;
 }
 
 @media (max-width: 1200px) {
